@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+class treeNode{
+private:
+  treeNode leftChild;
+  treeNode rightChild;
+  int data;
+public:
+  treeNode(int ~data){
+    this.data = ~data;
+    leftChild = NULL;
+    rightChild = NULL;
+  }
+  addNode(int ~data){
+    if((~data<data?leftChild:rightChild) == NULL){
+      ~data<data?leftChild:rightChild = new treeNode(~data);
+    }else{
+      (~data<data?leftChild:rightChild).addNode(~data);
+    }
+  }
+  getinorder
+  
+}
+
+int main(){
+
+}
